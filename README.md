@@ -89,6 +89,7 @@ Pull requests are welcome.
 # Status
 
 Customandelbrot is hopefully mostly done, for now. I'll try to add Fatou/equipotential lines soon as well.  
+There exists a menu for the app, but is ignored for the sake of getting into the View mode faster.
 
 # Acknowledgements
 
