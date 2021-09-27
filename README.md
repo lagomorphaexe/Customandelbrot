@@ -4,10 +4,13 @@ It also offers very high levels of customization (hence the name).
 
 # Customization
 
+The fractals in this program are computed with an escape-time algorithm (for the most part). This means that each pixel's coordinates are continuously iterated on by a function z -> z^n + c (based on Power List), where c is a constant term. The cycle repeats until a maximum iteration count has been reached, or if the absolute value of z exceeds a given value (the overflow).  
+For n=2, this generates the famous Mandelbrot Set. For other values of n (or different mappings altogether), different fractals can be generated.
+
 ## Parameter Bar
 
 To the right of the screen is the Parameter Bar.
-- Julia Mode:    *Determines the type of fractal being shown*  
+- Julia Mode:    *Determines the type of fractal being shown -- the pixel coordinates are either the constant term (M) or the initial z-value (J)*  
 - Coloring Mode: *Color scheme*  
 - Pixel Size:    *Image resolution; lower pixel size looks better but takes longer to render*  
 - Iterations:    *Fractal resolution; more iterations show more points outside of the fractal but take longer to render points inside the fractal*  
@@ -31,7 +34,7 @@ To the right of the screen is the Parameter Bar.
 - Alt Preview:  *Whether a popup window comes up to show the Julia/Mandelbrot set with "location" at cursor position*  
 - Color Invert: *If off, coloring is based on how long points take to escape. If on, points are colored by the minimal distance they get to the origin. See keybind " for additional info*  
 - Overflow:     *The radius of the ball centered at the origin that determines whether a point has escaped or not. For single-length integer powerlists, 2 works perfectly*  
-- Render Center:*The center of the current render*  
+- Render Center: *The center of the current render*  
 - Input Power:  *The transform on the constant term (like Scale List), but takes an argument of power-list-like powers. E.g., 2 would square the added constant*  
 
 ## Keybinds
