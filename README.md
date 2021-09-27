@@ -1,4 +1,4 @@
-# Customandelbrot v3.0.2
+# Customandelbrot v3.0.3
 Customandelbrot is a program created to view Mandelbrot and Julia Sets of polynomial-like mappings
 It also offers very high levels of customization (hence the name).
 
@@ -74,9 +74,13 @@ To the left of the screen is a bar that allows for the saving and loading of set
 - [↓]:      *Downloads the set with the name entered as a png. If none is given, it is downloaded with a unique timestamp*.  
 Clicking on the name of a saved set's data will automatically load it.  
 
-# Requirements
+# Requirements / Installation
 
-Processing 3.0 or later (ideally Processing 3.5.4)  
+1. Install Processing 3.0 or later if it is not already installed  
+2. Clone the source code into a folder namer "Customandelbrot_3_0_3"  
+3. Run the program through the processing editor.  
+
+Note that exporting applications from processing does not exactly work, but I will try to create a working executable.
 
 # Contributing
 
